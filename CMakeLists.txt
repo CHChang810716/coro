@@ -9,7 +9,7 @@ set(
 )
 HunterGate(
     URL "git@github.com:CHChang810716/hunter.git"
-    SHA1 c690bb041dcf7c3b3fb3e23031ec509a013c0d80
+    SHA1 dd87828cd0a602394045f3462191b61501ceb49d
     FILEPATH ${CMAKE_CURRENT_LIST_DIR}/cmake/hunter_config.cmake
 )
 
@@ -19,7 +19,7 @@ project(CppProjectTemplate
 )
 option(BUILD_TEST   "Build project with test"   OFF)
 option(INSTALL_DEPS "Install dependensies"      OFF)
-
+set(CMAKE_CXX_STANDARD 17)
 include(cmake/packages.cmake)
 include(cmake/src.cmake)
 include(cmake/ide.cmake)
